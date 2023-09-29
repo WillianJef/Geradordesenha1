@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+</head>
+
+<body>
+
+    <img src="imagens/logogerador de senjha.png" class="logo" /><!--logo-->
+    <main class="conteiner-input">
+        <span>Tamanho <span id="valor"></span> caracteres</span>
+        <input id="slaider" class="slaider" type="range" value="15" min="5" max="25" />
+        <button id="button" class="button-gerador" onclick="generatePassword()">Gerar sua
+            senha</button><!--button-gerador-->
+    </main><!--main-->
+
+    <div id="conteiner-password" onclick="copyPassword()" class="conteiner-password hide">
+        <span title="title" class="title">SUA SENHA FOI:</span>
+        <span id="password" class="password">########</span>
+        <span class="clique">CLIQUE AQUI PARA COPIAR</span>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

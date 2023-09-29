@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 32, 32);
+}
+
+.logo {
+    max-width: 500px;
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.conteiner-input {
+    max-width: 580px;
+    margin: 14px 0;
+}
+
+.conteiner-input span {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.slaider {
+    -webkit-appearance: none;
+    border-radius: 8px;
+    width: 100%;
+    background-color: rgb(55, 55, 190);
+    margin-top: 10px;
+}
+
+button {
+    background-color: rgb(39, 151, 39);
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: 1px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    color: white;
+}
+
+.button-gerador:hover {
+    background-color: rgb(51, 126, 51);
+    transform: scale(1.05);
+    transition-delay: 0.2s;
+    transition:  0.5s;
+}
+
+.conteiner-password {
+    max-width: 600px;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.title{
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+.password{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 15px;
+    border: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 50px;
+    align-items: center;
+    transition: 0.5s;
+}
+.password:hover{
+    transform: scale(1.05);
+    transition-delay: 0.2s;
+}
+.hide{
+    display: none;
+}
+.clique{
+    position: relative;
+    padding: 6px 8px;
+    background-color: rgb(15,15, 15);
+    text-align: center;
+    border-radius: 10px;
+    border: 0;
+    visibility: hidden;
+    transition-delay: 0.2s;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.conteiner-password:hover .clique{
+    visibility: visible;
+    background-color: rgb(68, 63, 63);
+    opacity: 1;
+    
+}
